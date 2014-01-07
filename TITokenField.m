@@ -71,8 +71,8 @@
 	_showAlreadyTokenized = NO;
     _searchSubtitles = YES;
     _forcePickSearchResult = NO;
-  _shouldSortResults = YES;
-  _shouldSearchInBackground = NO;
+    _shouldSortResults = YES;
+    _shouldSearchInBackground = NO;
 	_resultsArray = [NSMutableArray array];
 	
 	_tokenField = [[TITokenField alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 42)];
@@ -1005,7 +1005,7 @@ NSString * const kTextHidden = @"\u200D"; // Zero-Width Joiner
 CGFloat const hTextPadding = 14;
 CGFloat const vTextPadding = 8;
 CGFloat const kDisclosureThickness = 2.5;
-UILineBreakMode const kLineBreakMode = UILineBreakModeTailTruncation;
+NSLineBreakMode const kLineBreakMode = NSLineBreakByTruncatingTail;
 
 @interface TIToken (Private)
 CGPathRef CGPathCreateTokenPath(CGSize size, BOOL innerPath);
